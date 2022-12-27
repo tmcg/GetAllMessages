@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "Get All Messages",
+    "description": "Get All Messages Toolbar Button",
+    "version": "1.0",
+    "author": "Tony McGee",
+    "applications": {
+        "gecko": {
+            "id": "tmcg-gam@ed7415078af1",
+            "strict_min_version": "102.0"
+        }
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "experiment_apis": {
+        "GetAllMessagesAPI": {
+            "schema": "api/schema.json",
+            "parent": {
+                "scopes": ["addon_parent"],
+                "paths": [["GetAllMessagesAPI"]],
+                "script": "api/implementation.js"
+            }
+        }
+    },
+    "browser_action": {
+        "default_title": "Get All New Messages",
+        "default_icon": "images/mail-32px.png"
+    },
+    "icons": {
+        "64": "images/mail-64px.png",
+        "32": "images/mail-32px.png",
+        "16": "images/mail-16px.png"
+    }
+}

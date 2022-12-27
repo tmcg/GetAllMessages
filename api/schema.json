@@ -1,0 +1,18 @@
+[
+    {
+        "namespace": "GetAllMessagesAPI",
+        "functions": [
+            {
+                "name": "getAllMessages",
+                "type": "function",
+                "async": true,
+                "parameters": [
+                    {
+                        "name": "windowId",
+                        "type": "integer"
+                    }
+                ]
+            }
+        ]
+    }
+]
